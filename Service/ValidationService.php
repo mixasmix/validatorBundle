@@ -328,6 +328,16 @@ class ValidationService
             );
         }
 
+        //высчитываем дату между выдачей и сегодняшним днем
+        $todayIssueDiff = (new DateTimeImmutable())->format('Y') - $passportData->getIssueDate()->format('Y');
+
+        //Если разница больше 20 лет, то паспорт просрочен
+        if ($todayIssueDiff > 20) {
+            throw new IssuePassportException(
+                sprintf('Недействительный паспорт: паспорт просрочен на %d лет', $todayIssueDiff),
+            );
+        }
+
         return true;
     }
 
