@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class MixasmixValidationBundleExtension extends Extension
 {
-    private const BUNDLE_NAME = 'fingineers_validation';
+    private const BUNDLE_NAME = 'mixasmix_validation';
 
     /**
      * @param array            $configs
