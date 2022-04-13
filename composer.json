@@ -16,7 +16,8 @@
     "symfony/framework-bundle": ">=5.0",
     "symfony/yaml": ">=5.0",
     "symfony/monolog-bundle": ">=3.0",
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-bcmath": "*"
   },
   "require-dev": {
 

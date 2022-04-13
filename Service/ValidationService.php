@@ -1,14 +1,14 @@
 <?php
 
-namespace Mixasmix\ValidationBundle\Service;
+namespace Fingineers\ValidationBundle\Service;
 
 use CurrencyValidationException;
 use DivisionPassportException;
 use EmptyValidationException;
-use Mixasmix\ValidationBundle\Enum\Currency;
 use IssuePassportException;
 use LengthValidationException;
 use DateTimeImmutable;
+use Mixasmix\ValidationBundle\Enum\Currency;
 use NumberPassportException;
 use PassportData;
 use PatternValidationException;
@@ -162,7 +162,7 @@ class ValidationService
         //Составляем 23-значное число из нуля, 5-й и 6-й цифр БИК и корреспондентского счета.
         $bikKs = '0' . substr($bik, -5, 2) . $ks;
 
-        if ($this->checkSumRsKs($ks, $bikKs) % 10 === 0) {
+        if ($this->checkSumRsKs($bikKs) % 10 === 0) {
             return true;
         }
 
@@ -240,7 +240,7 @@ class ValidationService
             $this->checkCurrency($rs, $currency);
         }
 
-        if ($this->checkSumRsKs($rs, $bikKs) % 10 === 0) {
+        if ($this->checkSumRsKs($bikKs) % 10 === 0) {
             return true;
         }
 
@@ -324,7 +324,7 @@ class ValidationService
         //разница между датой рождения и датой выдачи не должна быть меньше 14 лет
         if ($issieBirthDayDiff < 14) {
             throw new IssuePassportException(
-                    'Недействительный паспорт: Возраст владельца на момент выдачи меньше 14 лет',
+                'Недействительный паспорт: Возраст владельца на момент выдачи меньше 14 лет',
             );
         }
 
@@ -397,12 +397,11 @@ class ValidationService
     }
 
     /**
-     * @param string $requisite
      * @param string $bikKey
      *
      * @return int
      */
-    private function checkSumRsKs(string $requisite, string $bikKey): int
+    private function checkSumRsKs(string $bikKey): int
     {
         $checkSum = 0;
 
