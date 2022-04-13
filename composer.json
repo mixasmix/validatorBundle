@@ -1,0 +1,51 @@
+{
+  "name": "mixasmix/validation-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Bundle for ValidationBundle",
+  "keywords": ["symfony5", "jwt"],
+  "homepage": "https://github.com/mixasmix/validatorBundle",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Michael",
+      "email": "mixasmix@mail.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "symfony/framework-bundle": ">=5.0",
+    "symfony/yaml": ">=5.0",
+    "symfony/monolog-bundle": ">=3.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Mixasmix\\ValidationBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "conflict": {
+    "symfony/symfony": "<5.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.2.x-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
