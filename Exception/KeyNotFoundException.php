@@ -2,6 +2,6 @@
 
 namespace Mixasmix\ValidationBundle\Exception;
 
-class NumberPassportException extends PassportException
+class KeyNotFoundException extends ValidationException
 {
 }

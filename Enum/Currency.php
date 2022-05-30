@@ -4,327 +4,811 @@ namespace Mixasmix\ValidationBundle\Enum;
 
 class Currency extends Enum
 {
-    public const ALL = 'all';
+    /**
+     * Лек
+     */
+    public const ALL = 'ALL';
 
+    /**
+     * Алжирский динар
+     */
     public const DZD = 'DZD';
 
+    /**
+     * Аргентинское песо
+     */
     public const ARS = 'ARS';
 
+    /**
+     * Австралийский доллар
+     */
     public const AUD = 'AUD';
 
+    /**
+     * Багамский доллар
+     */
     public const BSD = 'BSD';
 
+    /**
+     * Бахрейнский динар
+     */
     public const BHD = 'BHD';
 
+    /**
+     * Така
+     */
     public const BDT = 'BDT';
 
+    /**
+     * Армянский драм
+     */
     public const AMD = 'AMD';
 
+    /**
+     * Барбадосский доллар
+     */
     public const BBD = 'BBD';
 
+    /**
+     * Бермудский доллар
+     */
     public const BMD = 'BMD';
 
+    /**
+     * Нгултрум
+     */
     public const BTN = 'BTN';
 
+    /**
+     * Боливиано
+     */
     public const BOB = 'BOB';
 
+    /**
+     * Пула
+     */
     public const BWP = 'BWP';
 
+    /**
+     * Белизский доллар
+     */
     public const BZD = 'BZD';
 
+    /**
+     * Доллар Соломоновых Островов
+     */
     public const SBD = 'SBD';
 
+    /**
+     * Брунейский доллар
+     */
     public const BND = 'BND';
 
+    /**
+     * Кьят
+     */
     public const MMK = 'MMK';
 
+    /**
+     * Бурундийский франк
+     */
     public const BIF = 'BIF';
 
+    /**
+     * Риель
+     */
     public const KHR = 'KHR';
 
+    /**
+     * Канадский доллар
+     */
     public const CAD = 'CAD';
 
+    /**
+     * Эскудо Кабо-Верде
+     */
     public const CVE = 'CVE';
 
+    /**
+     * Доллар Островов Кайман
+     */
     public const KYD = 'KYD';
 
+    /**
+     * Шри-ланкийская рупия
+     */
     public const LKR = 'LKR';
 
+    /**
+     * Чилийское песо
+     */
     public const CLP = 'CLP';
 
+    /**
+     * Юань
+     */
     public const CNY = 'CNY';
 
+    /**
+     * Колумбийское песо
+     */
     public const COP = 'COP';
 
+    /**
+     * Коморский франк
+     */
     public const KMF = 'KMF';
 
+    /**
+     * Коста-риканский колон
+     */
     public const CRC = 'CRC';
 
+    /**
+     * Куна
+     */
     public const HRK = 'HRK';
 
+    /**
+     * Кубинское песо
+     */
     public const CUP = 'CUP';
 
+    /**
+     * Чешская крона
+     */
     public const CZK = 'CZK';
 
+    /**
+     * Датская крона
+     */
     public const DKK = 'DKK';
 
+    /**
+     * Доминиканское песо
+     */
     public const DOP = 'DOP';
 
+    /**
+     * Сальвадорский колон
+     */
     public const SVC = 'SVC';
 
+    /**
+     * Эфиопский быр
+     */
     public const ETB = 'ETB';
 
+    /**
+     * Накфа
+     */
     public const ERN = 'ERN';
 
+    /**
+     * Фунт Фолклендских островов
+     */
     public const FKP = 'FKP';
 
+    /**
+     * Доллар Фиджи
+     */
     public const FJD = 'FJD';
 
+    /**
+     * Франк Джибути
+     */
     public const DJF = 'DJF';
 
+    /**
+     * Даласи
+     */
     public const GMD = 'GMD';
 
+    /**
+     * Гибралтарский фунт
+     */
     public const GIP = 'GIP';
 
+    /**
+     * Кетсаль
+     */
     public const GTQ = 'GTQ';
 
+    /**
+     * Гвинейский франк
+     */
     public const GNF = 'GNF';
 
+    /**
+     * Гайанский доллар
+     */
     public const GYD = 'GYD';
 
+    /**
+     * Гурд
+     */
     public const HTG = 'HTG';
 
+    /**
+     * Лемпира
+     */
     public const HNL = 'HNL';
 
+    /**
+     * Гонконгский доллар
+     */
     public const HKD = 'HKD';
 
+    /**
+     * Форинт
+     */
     public const HUF = 'HUF';
 
+    /**
+     * Исландская крона
+     */
     public const ISK = 'ISK';
 
+    /**
+     * Индийская рупия
+     */
     public const INR = 'INR';
 
+    /**
+     * Рупия
+     */
     public const IDR = 'IDR';
 
+    /**
+     * Иранский риал
+     */
     public const IRR = 'IRR';
 
+    /**
+     * Иракский динар
+     */
     public const IQD = 'IQD';
 
+    /**
+     * Новый израильский шекель
+     */
     public const ILS = 'ILS';
 
+    /**
+     * Ямайский доллар
+     */
     public const JMD = 'JMD';
 
+    /**
+     * Иена
+     */
     public const JPY = 'JPY';
 
+    /**
+     * Тенге
+     */
     public const KZT = 'KZT';
 
+    /**
+     * Иорданский динар
+     */
     public const JOD = 'JOD';
 
+    /**
+     * Кенийский шиллинг
+     */
     public const KES = 'KES';
 
+    /**
+     * Северокорейская вона
+     */
     public const KPW = 'KPW';
 
+    /**
+     * Вона
+     */
     public const KRW = 'KRW';
 
+    /**
+     * Кувейтский динар
+     */
     public const KWD = 'KWD';
 
+    /**
+     * Сом
+     */
     public const KGS = 'KGS';
 
+    /**
+     * Лаосский кип
+     */
     public const LAK = 'LAK';
 
+    /**
+     * Ливанский фунт
+     */
     public const LBP = 'LBP';
 
+    /**
+     * Лоти
+     */
     public const LSL = 'LSL';
 
+    /**
+     * Либерийский доллар
+     */
     public const LRD = 'LRD';
 
+    /**
+     * Ливийский динар
+     */
     public const LYD = 'LYD';
 
+    /**
+     * Южносуданский фунт
+     */
     public const SSP = 'SSP';
 
+    /**
+     * Патака
+     */
     public const MOP = 'MOP';
 
+    /**
+     * Малавийская квача
+     */
     public const MWK = 'MWK';
 
+    /**
+     * Малайзийский ринггит
+     */
     public const MYR = 'MYR';
 
+    /**
+     * Руфия
+     */
     public const MVR = 'MVR';
 
+    /**
+     * Угия
+     */
     public const MRU = 'MRU';
 
+    /**
+     * Маврикийская рупия
+     */
     public const MUR = 'MUR';
 
+    /**
+     * Мексиканское песо
+     */
     public const MXN = 'MXN';
 
+    /**
+     * Тугрик
+     */
     public const MNT = 'MNT';
 
+    /**
+     * Молдавский лей
+     */
     public const MDL = 'MDL';
 
+    /**
+     * Марокканский дирхам
+     */
     public const MAD = 'MAD';
 
+    /**
+     * Оманский риал
+     */
     public const OMR = 'OMR';
 
+    /**
+     * Доллар Намибии
+     */
     public const NAD = 'NAD';
 
+    /**
+     * Непальская рупия
+     */
     public const NPR = 'NPR';
 
+    /**
+     * Нидерландский антильский гульден
+     */
     public const ANG = 'ANG';
 
+    /**
+     * Арубанский флорин
+     */
     public const AWG = 'AWG';
 
+    /**
+     * Вату
+     */
     public const VUV = 'VUV';
 
+    /**
+     * Новозеландский доллар
+     */
     public const NZD = 'NZD';
 
+    /**
+     * Золотая кордоба
+     */
     public const NIO = 'NIO';
 
+    /**
+     * Найра
+     */
     public const NGN = 'NGN';
 
+    /**
+     * Норвежская крона
+     */
     public const NOK = 'NOK';
 
+    /**
+     * Пакистанская рупия
+     */
     public const PKR = 'PKR';
 
+    /**
+     * Бальбоа
+     */
     public const PAB = 'PAB';
 
+    /**
+     * Кина
+     */
     public const PGK = 'PGK';
 
+    /**
+     * Гуарани
+     */
     public const PYG = 'PYG';
 
+    /**
+     * Соль
+     */
     public const PEN = 'PEN';
 
+    /**
+     * Филиппинское песо
+     */
     public const PHP = 'PHP';
 
+    /**
+     * Катарский риал
+     */
     public const QAR = 'QAR';
 
+    /**
+     * Российский рубль
+     */
     public const RUB = 'RUB';
 
+    /**
+     * Франк Руанды
+     */
     public const RWF = 'RWF';
 
+    /**
+     * Фунт Святой Елены
+     */
     public const SHP = 'SHP';
 
+    /**
+     * Саудовский риял
+     */
     public const SAR = 'SAR';
 
+    /**
+     * Сейшельская рупия
+     */
     public const SCR = 'SCR';
 
+    /**
+     * Леоне
+     */
     public const SLL = 'SLL';
 
+    /**
+     * Сингапурский доллар
+     */
     public const SGD = 'SGD';
 
+    /**
+     * Донг
+     */
     public const VND = 'VND';
 
+    /**
+     * Сомалийский шиллинг
+     */
     public const SOS = 'SOS';
 
+    /**
+     * Рэнд
+     */
     public const ZAR = 'ZAR';
 
+    /**
+     * Лилангени
+     */
     public const SZL = 'SZL';
 
+    /**
+     * Шведская крона
+     */
     public const SEK = 'SEK';
 
+    /**
+     * Швейцарский франк
+     */
     public const CHF = 'CHF';
 
+    /**
+     * Сирийский фунт
+     */
     public const SYP = 'SYP';
 
+    /**
+     * Бат
+     */
     public const THB = 'THB';
 
+    /**
+     * Паанга
+     */
     public const TOP = 'TOP';
 
+    /**
+     * Доллар Тринидада и Тобаго
+     */
     public const TTD = 'TTD';
 
+    /**
+     * Дирхам (ОАЭ)
+     */
     public const AED = 'AED';
 
+    /**
+     * Тунисский динар
+     */
     public const TND = 'TND';
 
+    /**
+     * Угандийский шиллинг
+     */
     public const UGX = 'UGX';
 
+    /**
+     * Денар
+     */
     public const MKD = 'MKD';
 
+    /**
+     * Египетский фунт
+     */
     public const EGP = 'EGP';
 
+    /**
+     * Фунт стерлингов
+     */
     public const GBP = 'GBP';
 
+    /**
+     * Танзанийский шиллинг
+     */
     public const TZS = 'TZS';
 
+    /**
+     * Доллар США
+     */
     public const USD = 'USD';
 
+    /**
+     * Уругвайское песо
+     */
     public const UYU = 'UYU';
 
+    /**
+     * Узбекский сум
+     */
     public const UZS = 'UZS';
 
+    /**
+     * Тала
+     */
     public const WST = 'WST';
 
+    /**
+     * Йеменский риал
+     */
     public const YER = 'YER';
 
+    /**
+     * Новый тайваньский доллар
+     */
     public const TWD = 'TWD';
 
+    /**
+     * Конвертируемое песо
+     */
     public const CUC = 'CUC';
 
+    /**
+     * Доллар Зимбабве
+     */
     public const ZWL = 'ZWL';
 
+    /**
+     * Новый туркменский манат
+     */
     public const TMT = 'TMT';
 
+    /**
+     * Ганский седи
+     */
     public const GHS = 'GHS';
 
+    /**
+     * Суданский фунт
+     */
     public const SDG = 'SDG';
 
+    /**
+     * Уругвайское песо в индексированных единицах
+     */
     public const UYI = 'UYI';
 
+    /**
+     * Сербский динар
+     */
     public const RSD = 'RSD';
 
+    /**
+     * Мозамбикский метикал
+     */
     public const MZN = 'MZN';
 
+    /**
+     * Азербайджанский манат
+     */
     public const AZN = 'AZN';
 
+    /**
+     * Румынский лей
+     */
     public const RON = 'RON';
 
+    /**
+     * Турецкая лира
+     */
     public const TRY = 'TRY';
 
+    /**
+     * Франк КФА ВЕАС
+     */
     public const XAF = 'XAF';
 
+    /**
+     * Восточно-карибский доллар
+     */
     public const XCD = 'XCD';
 
+    /**
+     * Франк КФА ВСЕАО
+     */
     public const XOF = 'XOF';
 
+    /**
+     * Франк КФП
+     */
     public const XPF = 'XPF';
 
+    /**
+     * СДР (специальные права заимствования)
+     */
     public const XDR = 'XDR';
 
+    /**
+     * Суринамский доллар
+     */
     public const SRD = 'SRD';
 
+    /**
+     * Малагасийский ариари
+     */
     public const MGA = 'MGA';
 
+    /**
+     * Единица реальной стоимости
+     */
     public const COU = 'COU';
 
+    /**
+     * Афгани
+     */
     public const AFN = 'AFN';
 
+    /**
+     * Сомони
+     */
     public const TJS = 'TJS';
 
+    /**
+     * Кванза
+     */
     public const AOA = 'AOA';
 
+    /**
+     * Болгарский лев
+     */
     public const BGN = 'BGN';
 
+    /**
+     * Конголезский франк
+     */
     public const CDF = 'CDF';
 
+    /**
+     * Конвертируемая марка
+     */
     public const BAM = 'ВАМ';
 
+    /**
+     * Евро
+     */
     public const EUR = 'EUR';
 
+    /**
+     * Гривна
+     */
     public const UAH = 'UAH';
 
+    /**
+     * Лари
+     */
     public const GEL = 'GEL';
 
+    /**
+     * Злотый
+     */
     public const PLN = 'PLN';
 
+    /**
+     * Бразильский реал
+     */
     public const BRL = 'BRL';
 
+    /**
+     * Замбийская квача
+     */
     public const ZMW = 'ZMW';
 
+    /**
+     * Белорусский рубль
+     */
     public const BYN = 'BYN';
 
+    /**
+     * Добра
+     */
     public const STN = 'STN';
 
+    /**
+     * Боливар Соберано
+     */
     public const VES = 'VES';
 
+    /**
+     * Боливар Соберано
+     */
     public const VED = 'VED';
+
 
     /**
      * ДОПУСТИМЫЕ значения
