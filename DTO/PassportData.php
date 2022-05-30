@@ -1,59 +1,63 @@
 <?php
 
+namespace Mixasmix\ValidationBundle\DTO;
+
+use DateTimeImmutable;
+
 class PassportData
 {
     /**
-     * @var string
+     * @var string | null
      */
-    private string $series;
+    private ?string $series;
 
     /**
-     * @var string
+     * @var string | null
      */
-    private string $number;
+    private ?string $number;
 
     /**
-     * @var DateTimeImmutable
+     * @var DateTimeImmutable | null
      */
-    private DateTimeImmutable $issueDate;
+    private ?DateTimeImmutable $issueDate;
 
     /**
-     * @var DateTimeImmutable
+     * @var DateTimeImmutable | null
      */
-    private DateTimeImmutable $birthDay;
+    private ?DateTimeImmutable $birthDay;
 
     /**
-     * @var string
+     * @var string | null
      */
-    private string $divisionCode;
+    private ?string $divisionCode;
 
     /**
-     * @var string
+     * @var string | null
      */
-    private string $divisionName;
+    private ?string $divisionName;
 
     /**
-     * @var string
+     * @var string | null
      */
-    private string $fullName;
+    private ?string $fullName;
 
     /**
-     * @param string            $series
-     * @param string            $number
-     * @param DateTimeImmutable $issueDate
-     * @param DateTimeImmutable $birthDay
-     * @param string            $divisionCode
-     * @param string            $divisionName
-     * @param string            $fullName
+     * @param string | null            $series
+     * @param string | null            $number
+     * @param DateTimeImmutable | null $issueDate
+     * @param DateTimeImmutable | null $birthDay
+     * @param string | null            $divisionCode
+     * @param string | null            $divisionName
+     * @param string | null            $fullName
      */
     public function __construct(
-        string $series,
-        string $number,
-        DateTimeImmutable $issueDate,
-        DateTimeImmutable $birthDay,
-        string $divisionCode,
-        string $divisionName,
-        string $fullName
+        ?string $series,
+        ?string $number,
+        ?DateTimeImmutable $issueDate,
+        ?DateTimeImmutable $birthDay,
+        ?string $divisionCode,
+        ?string $divisionName,
+        ?string $fullName
     ) {
         $this->series = $series;
         $this->number = $number;
@@ -65,57 +69,57 @@ class PassportData
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getSeries(): string
+    public function getSeries(): ?string
     {
         return $this->series;
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getNumber(): string
+    public function getNumber(): ?string
     {
         return $this->number;
     }
 
     /**
-     * @return DateTimeImmutable
+     * @return DateTimeImmutable | null
      */
-    public function getIssueDate(): DateTimeImmutable
+    public function getIssueDate(): ?DateTimeImmutable
     {
         return $this->issueDate;
     }
 
     /**
-     * @return DateTimeImmutable
+     * @return DateTimeImmutable | null
      */
-    public function getBirthDay(): DateTimeImmutable
+    public function getBirthDay(): ?DateTimeImmutable
     {
         return $this->birthDay;
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getDivisionCode(): string
+    public function getDivisionCode(): ?string
     {
         return $this->divisionCode;
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getDivisionName(): string
+    public function getDivisionName(): ?string
     {
         return $this->divisionName;
     }
 
     /**
-     * @return string
+     * @return string | null
      */
-    public function getFullName(): string
+    public function getFullName(): ?string
     {
         return $this->fullName;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace mixasmix\ValidationBundle\DependencyInjection;
+namespace Mixasmix\ValidationBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
