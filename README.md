@@ -2,20 +2,6 @@
 
 ## Использование:  
 Необходимо установить бандл, добавив в composer.json своего проекта
-
-	   "repositories": [  
-		     { 
-			     "type": "gitlab",
-			     "url": "https://gitlab.simple-bank.ru/tools/bundles/validation-bundle",
-			     "branch": "master" 
-			} 
-		] 
-и
-
-	 "config": {
-		 "gitlab-domains": ["gitlab.simple-bank.ru"],
-			"secure-http": false,
-	 }  
 Потом в консоли: `composer require mixasmix/validation-bundle`  
 При запуске `composer update` консоль попросит данные аутентификации в гитлаб.  
 В файле service.yaml:
